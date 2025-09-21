@@ -25,6 +25,7 @@
     font-weight: 500;
     letter-spacing: 0;
     color: $main-accent;
+    transition: $time-of-changes;
 
     &::after {
       display: block;
@@ -38,7 +39,7 @@
   }
 
   &:hover .card__title {
-    color: #34568b;
+    color: $title-hover-color;
     transition: $time-of-changes;
   }
 
@@ -98,7 +99,7 @@
     margin: 16px;
     text-decoration: none;
     background-color: $blue-accent;
-    color: #fff;
+    color: $white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -107,7 +108,7 @@
     transition: $time-of-changes;
 
     &:hover {
-      background-color: #fff;
+      background-color: $white-color;
       color: $blue-accent;
       border: 1px solid $blue-accent;
       transition: $time-of-changes;

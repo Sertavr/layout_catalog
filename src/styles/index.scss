@@ -1,36 +1,15 @@
 @import './card/card';
 @import './header/header';
+@import './container-cards/container-cards';
 
 body {
   margin: 0;
-}
-
-.container {
-  --column-count: 1;
-
-  display: grid;
-  grid-template-columns: repeat(var(--column-count), 200px);
-
-  // grid-template-rows: repeat(2, 408px);
-  gap: 46px 48px;
-  justify-content: center;
-  padding: 50px 40px;
-}
-
-@media (min-width: 488px) {
-  .container {
-    --column-count: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    --column-count: 3;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    --column-count: 4;
-  }
+  font-family:
+    Roboto,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
