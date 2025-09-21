@@ -1,7 +1,7 @@
 .card {
   box-sizing: border-box;
   width: 200px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $border-card;
   border-radius: 5px;
   margin: auto;
   transition: $time-of-changes;
@@ -40,7 +40,6 @@
 
   &:hover .card__title {
     color: $title-hover-color;
-    transition: $time-of-changes;
   }
 
   &__rating {
@@ -111,12 +110,10 @@
       background-color: $white-color;
       color: $blue-accent;
       border: 1px solid $blue-accent;
-      transition: $time-of-changes;
     }
   }
 
   &:hover {
     transform: scale(1.2);
-    transition: $time-of-changes;
   }
 }
